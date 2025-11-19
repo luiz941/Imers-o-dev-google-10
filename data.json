@@ -1,0 +1,56 @@
+[
+{
+    "nome":"JavaScript",
+    "descrição":"Linguagem onipresente na web, essencial para desenvolvimento front-end e back-end com Node.js.",
+    "ano":1995,
+    "link":"https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+},
+{
+    "nome":"Python",
+    "descrição":"Sintaxe limpa e legível, muito usada em ciência de dados, inteligência artificial e desenvolvimento web.",
+    "ano":1991,
+    "link":"https://docs.python.org/pt-br/3.14/"
+},
+{
+    "nome":"Java",
+    "descrição":"Robusta e orientada a objetos, popular para aplicações empresariais, sistemas Android e microsserviços.",
+    "ano":1995,
+    "link":"https://docs.oracle.com/en/java/"
+},
+{
+    "nome":"C#",
+    "descrição":"Linguagem moderna da Microsoft, usada para web com .NET, jogos com Unity e aplicações Windows.",
+    "ano":2000,
+    "link":"https://docs.microsoft.com/pt-br/dotnet/csharp/"
+},
+{
+    "nome":"PHP",
+    "descrição":"Linguagem de script do lado do servidor muito popular para desenvolvimento web, base do WordPress.",
+    "ano":1995,
+    "link":"https://www.php.net/manual/pt_BR/"
+},
+{
+    "nome":"TypeScript",
+    "descrição":"Um superset do JavaScript que adiciona tipagem estática, melhorando a escalabilidade de grandes projetos.",
+    "ano":2012,
+    "link":"https://www.typescriptlang.org/docs/"
+},
+{
+    "nome":"Go",
+    "descrição":"Criada pelo Google, é uma linguagem compilada focada em simplicidade, concorrência e performance de rede.",
+    "ano":2009,
+    "link":"https://go.dev/doc/"
+},
+{
+    "nome":"Rust",
+    "descrição":"Focada em segurança de memória e alta performance, ideal para sistemas de baixo nível e concorrência.",
+    "ano":2010,
+    "link":"https://doc.rust-lang.org/book/"
+},
+{
+    "nome":"Kotlin",
+    "descrição":"Linguagem moderna e pragmática, oficial para desenvolvimento Android e crescente no back-end.",
+    "ano":2011,
+    "link":"https://kotlinlang.org/docs/home.html"
+}
+]
