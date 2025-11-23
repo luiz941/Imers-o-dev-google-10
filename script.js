@@ -16,7 +16,7 @@ async function iniciarBusca() {
     const termoBusca = campoBusca.value.toLowerCase();
     const dadosFiltrados = dados.filter(dado =>
         dado.nome.toLowerCase().includes(termoBusca)||
-        dado.descrição.toLowerCase().includes(termoBusca)
+        dado.descricao.toLowerCase().includes(termoBusca)
     );
 
     renderizarCards(dadosFiltrados);
@@ -28,8 +28,8 @@ function renderizarCards(dados) {
         let article = document.createElement("article");
         article.innerHTML = `
         <h2>${dado.nome}</h2>
-        <p><strong>Ano de lançamento:</strong> ${dado.ano}</p>
-        <p>${dado.descrição}</p>
+        <p><strong>Ano de lançamento:</strong> ${dado.data_criacao}</p>
+        <p>${dado.descricao}</p>
         <a href="${dado.link}" target="_blank">Saiba mais</a>
         `;
         cardContainer.appendChild(article);
