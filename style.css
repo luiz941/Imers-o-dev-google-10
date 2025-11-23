@@ -1,40 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); /* Importa a fonte Quicksand do Google Fonts */
 
 * {
-    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
+    box-sizing: border-box; /* Garante que padding e borda não aumentem o tamanho total do elemento */
 }
 
 :root {
-    --primary-color: #8ab4f8; /* Cor primária (azul claro) */
-    --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
-    --tertiary-color: #9aa0a6; /* Cor terciária (cinza médio) */
-    --bg-color: #202124; /* Cor de fundo (cinza escuro) */
+    --primary-color:#8ab4f8; /* Cor primária */
+    --secondary-color:#e8eaed; /* Cor secundária */
+    --tertiary-color:#9aa0a6; /* Cor terciária */
+    --bg-color:#202124; /* Cor de fundo */
 }
 
 body {
-    margin: 0; /* Remove a margem padrão do body */
+    margin: 0; /* Remove a margem padrão */
     background: var(--bg-color); /* Define a cor de fundo usando uma variável */
-    color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
+    color: var(--secondary-color); /* Define a cor do texto usando uma variável */
     font-family: "Quicksand", sans-serif; /* Define a família da fonte */
 }
 
 header {
-    padding: 2rem 1rem; /* Espaçamento interno (2rem em cima/baixo, 1rem nos lados) */
+    padding: 2rem 1rem; /* Espaçamento interno (vertical e horizontal) */
     display: flex; /* Habilita o layout flexbox */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    justify-content: space-around; /* Distribui os itens com espaço ao redor */
-    position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
-    top: 0; /* Posição do topo quando sticky */
-    background: var(--bg-color); /* Cor de fundo do cabeçalho */
-    z-index: 10; /* Define a ordem de empilhamento para ficar sobre outros elementos */
+    align-items: center;  /* Alinha os itens verticalmente ao centro */
+    justify-content: space-around;  /* Distribui os itens horizontalmente com espaço ao redor */
+    position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar */
+    top: 0; /* Posição no topo da página */
+    background-color: var(--bg-color); /* Cor de fundo do cabeçalho */
+    z-index: 10; /* Define a ordem de empilhamento, para ficar sobre outros elementos */
     border-bottom: 1px solid var(--bg-color); /* Adiciona uma borda inferior */
     gap: 1rem; /* Espaçamento entre os elementos flex */
 }
 
 header h1 {
     font-size: 1.5rem; /* Tamanho da fonte */
-    margin: 0; /* Remove a margem padrão */
-    font-weight: 500; /* Peso da fonte (médio) */
+    margin: 0; /* Remove a margem */
+    font-weight: 500; /* Peso da fonte */
     white-space: nowrap; /* Impede a quebra de linha do texto */
 }
 
@@ -46,28 +46,28 @@ div input {
     font-family: inherit; /* Herda a família da fonte do elemento pai */
     font-size: 1.5rem; /* Tamanho da fonte */
     transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades */
-    width: 30rem; /* Largura do input */
-    color: var(--secondary-color); /* Cor do texto digitado */
+    width: 30rem; /* Largura do campo de input */
+    color: var(--secondary-color); /* Cor do texto */
     margin-right: .5rem; /* Margem à direita */
 }
 
 div input::placeholder {
-    font-size: 1.2rem; /* Tamanho da fonte do placeholder */
-    font-weight: 300; /* Peso da fonte do placeholder */
-    color: var(--tertiary-color); /* Cor do texto do placeholder */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: 300; /* Peso da fonte */
+    color: var(--tertiary-color); /* Cor do texto */
 }
 
 div input:focus {
     outline: none; /* Remove a borda de foco padrão */
-    border-color: var(--bg-color); /* Muda a cor da borda ao focar */
-    box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra de caixa para indicar foco */
+    border-color: var(--bg-color); /* Muda a cor da borda */
+    box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra para indicar foco */
 }
 
 #botao-busca {
     padding: 1rem 2rem; /* Espaçamento interno */
     border-radius: 1rem; /* Arredonda as bordas */
-    border: none; /* Remove a borda padrão */
-    cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
     font-family: inherit; /* Herda a família da fonte */
     font-weight: 500; /* Peso da fonte */
     font-size: 1rem; /* Tamanho da fonte */
@@ -75,17 +75,17 @@ div input:focus {
     transition: background-color 0.2s ease, color 0.2s ease; /* Transição suave para cor de fundo e cor do texto */
     background-color: var(--bg-color); /* Cor de fundo */
     color: var(--secondary-color); /* Cor do texto */
-    border: 1px solid var(--bg-color); /* Adiciona uma borda */
+    border: 1px solid var(--bg-color); /* Borda */
 }
 
 #botao-busca:hover {
     background-color: var(--primary-color); /* Muda a cor de fundo ao passar o mouse */
     color: var(--bg-color); /* Muda a cor do texto ao passar o mouse */
-    box-shadow: 0 0 0 0.1rem var(--primary-color); /* Adiciona uma sombra de caixa */
+    box-shadow: 0 0 0 0.1rem var(--primary-color); /* Adiciona uma sombra ao passar o mouse */
 }
 
 #botao-busca:active {
-    transform: scale(0.98); /* Efeito de clique (diminui o tamanho) */
+    transform:scale(0.98); /* Efeito de clique diminuindo o tamanho do botão */
 }
 
 main {
@@ -93,24 +93,24 @@ main {
     max-width: 80rem; /* Largura máxima do conteúdo principal */
     margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
     margin-top: 2rem; /* Margem no topo */
-    height: calc(100vh - 10rem - 4rem); /* Calcula a altura para preencher o espaço restante da tela */
+    height: calc(100vh - 10rem - 4rem); /* Calcula a altura para preencher a tela, descontando cabeçalho e rodapé */
 }
 
 article {
     background: none; /* Sem cor de fundo */
     border-radius: 0; /* Sem bordas arredondadas */
-    padding: 0; /* Remove o padding */
-    padding: 0 1rem; /* Espaçamento interno nos lados */
+    padding:0; /* Remove o padding */
+    padding: 0 1rem; /* Espaçamento interno horizontal */
     margin-bottom: 1.25rem; /* Margem inferior */
     box-shadow: none; /* Sem sombra */
-    transition: background-color 0.3s ease, border-bottom-color 0.3s ease; /* Transição suave */
+    transition: background-color 0.3s ease, border-bottom-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
     border-bottom: 1px solid var(--bg-color); /* Borda inferior */
-    padding-bottom: 1.5rem; /* Espaçamento interno inferior */
+    padding-bottom:1.5rem; /* Espaçamento interno inferior */
 }
 
 article:hover {
-    transform: scale(1.01); /* Aumenta ligeiramente o tamanho ao passar o mouse */
-    cursor: pointer; /* Muda o cursor para uma mão */
+    transform: scale(1.01); /* Aumenta levemente o tamanho ao passar o mouse */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
 article h2 {
@@ -124,7 +124,7 @@ article h2 {
 }
 
 article p {
-    margin: 0.5rem 0; /* Margem superior e inferior */
+    margin: 0.5rem 0; /* Margem vertical */
     line-height: 1.6; /* Altura da linha para melhor legibilidade */
     font-size: 1rem; /* Tamanho da fonte */
     margin-bottom: 0.5rem; /* Margem inferior */
@@ -132,13 +132,13 @@ article p {
 }
 
 article p strong {
-    color: var(--tertiary-color); /* Cor do texto em negrito */
+    color:var(--tertiary-color); /* Cor do texto em negrito */
     font-weight: 400; /* Peso da fonte */
 }
 
 article a {
     color: var(--primary-color); /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado padrão */
+    text-decoration: none; /* Remove o sublinhado do link */
     font-weight: 200; /* Peso da fonte */
 }
 
@@ -148,7 +148,7 @@ article a:hover {
 
 .footer {
     position: absolute; /* Posicionamento absoluto em relação ao elemento pai posicionado */
-    bottom: 0; /* Alinha na parte inferior */
+    bottom: 0; /* Fixa no final da página */
     left: 0; /* Alinha à esquerda */
     width: 100%; /* Largura total */
     color: var(--tertiary-color); /* Cor do texto */
@@ -158,8 +158,8 @@ article a:hover {
     font-size: 0.8rem; /* Tamanho da fonte */
 }
 
-.footer-location {
-    color: #9aa0a6; /* Cor do texto */
+.foot-location {
+    color: #9aa0a6; /* Cor do texto de localização */
     margin-bottom: 10px; /* Margem inferior */
 }
 
@@ -171,70 +171,67 @@ article a:hover {
     gap: 15px; /* Espaçamento entre os links */
 }
 
-.footer-links a {
+.footer-links a{
     color: var(--secondary-color); /* Cor do link */
     text-decoration: none; /* Remove o sublinhado */
     transition: color 0.2s; /* Transição suave para a cor */
 }
 
 .footer-links a:hover {
-    color: var(--accent-color); /* Muda a cor do link ao passar o mouse (variável não definida) */
+    color: var(--primary-color); /* Muda a cor do link ao passar o mouse */
 }
 
-@media (max-width: 768px) {
-    header { /* Estilos para telas com largura máxima de 768px */
-        flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
-        padding: 1rem; /* Reduz o espaçamento interno */
+@media (max-width: 768px) { /* Estilos para telas com largura máxima de 768px (tablets, etc.) */
+    header {
+        flex-direction: column; /* Empilha os itens do cabeçalho verticalmente */
+        padding: 1rem; /* Reduz o espaçamento interno do cabeçalho */
+    }
+    header h1 {
+        text-align: center; /* Centraliza o título */
+        margin-bottom: 1rem; /* Adiciona margem inferior ao título */
     }
 
-    header h1 { /* Estilos para o h1 no cabeçalho em telas menores */
-        text-align: center; /* Centraliza o texto */
-        margin-bottom: 1rem; /* Adiciona margem inferior */
+    div input {
+        width: 90vw; /* Define a largura do input para 90% da largura da viewport */
+        font-size: 1.2rem; /* Reduz o tamanho da fonte do input */
+    }
+    main {
+        padding: 0 1rem; /* Adiciona espaçamento interno horizontal ao conteúdo principal */
     }
 
-    div input { /* Estilos para o input em telas menores */
-        width: 90vw; /* Largura baseada na largura da viewport */
-        font-size: 1.2rem; /* Reduz o tamanho da fonte */
-    }
-
-    main { /* Estilos para o main em telas menores */
-        padding: 0 1rem; /* Adiciona espaçamento lateral */
-    }
-
-    article:hover { /* Estilos para o article em telas menores */
-        transform: none; /* Remove o efeito de escala ao passar o mouse */
+    article:hover {
+        transform: none; /* Remove o efeito de escala ao passar o mouse em telas menores */
     }
 }
 
-@media (max-width: 480px) {
-    header h1 { /* Estilos para o h1 em telas com largura máxima de 480px */
-        font-size: 1rem; /* Reduz ainda mais o tamanho da fonte */
-        max-width: 70%; /* Define uma largura máxima */
-        word-wrap: break-word; /* Permite a quebra de palavras longas */
+@media (max-width: 480px) { /* Estilos para telas com largura máxima de 480px (celulares) */
+    header h1 {
+        font-size: 1rem; /* Reduz ainda mais o tamanho da fonte do título */
+        max-width: 70%; /* Define uma largura máxima para o título */
+        word-wrap: break-word; /* Permite que o texto do título quebre a linha */
     }
 
-    div input, /* Estilos para o input e seu placeholder em telas muito pequenas */
+    div input,
     div input::placeholder {
-        font-size: 1rem; /* Reduz o tamanho da fonte */
+        font-size: 1rem; /* Reduz o tamanho da fonte do input e do placeholder */
+    }
+    article h2 {
+        font-size: 1.3rem; /* Reduz o tamanho da fonte dos títulos dos artigos */
     }
 
-    article h2 { /* Estilos para o h2 do article em telas muito pequenas */
-        font-size: 1.3rem; /* Reduz o tamanho da fonte */
+    div {
+        display: flex; /* Garante o comportamento flex */
+        align-items: center; /* Centraliza os itens */
+        justify-content: center; /* Centraliza o conteúdo */
+        flex-direction: column; /* Empilha os itens verticalmente */
+        gap: 0.5rem; /* Adiciona um pequeno espaço entre os itens */
     }
 
-    div { /* Estilos para a div do cabeçalho em telas muito pequenas */
-        display: flex; /* Habilita flexbox */
-        align-items: center; /* Alinha itens ao centro */
-        justify-content: center; /* Centraliza itens */
-        flex-direction: column; /* Organiza em coluna */
-        gap: 0.5rem; /* Espaçamento entre os itens */
+    .footer {
+        display: none; /* Oculta o rodapé em telas muito pequenas */
     }
 
-    .footer { /* Estilos para o rodapé em telas muito pequenas */
-        display: none; /* Oculta o rodapé */
+    button {
+        margin-top: 1rem; /* Adiciona uma margem superior ao botão */
     }
-
-    button { /* Estilos para o botão em telas muito pequenas */
-        margin-top: 1rem; /* Adiciona margem no topo */
-    }
-}
+}   
